@@ -1,0 +1,50 @@
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  border: 2px solid #010101;
+  border-radius: 8px;
+}
+.card {
+  gap: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: grey;
+}
+
+.avatar {
+  margin-top: 50px;
+  border-radius: 100%;
+  background-color: orange;
+  max-width: 50%;
+}
+.name {
+  font-size: 32px;
+  font-weight: bold;
+  color: #010101;
+}
+.statisticList {
+  width: 100%;
+  display: flex;
+  border-top: 2px solid #010101;
+  background-color: orange;
+}
+.statisticItem {
+  padding: 8px;
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  width: calc(100% / 3);
+}
+.statisticItem:not(:last-child) {
+  border-right: 2px solid #010101;
+}
+.label {
+  text-transform: capitalize;
+}
+.value {
+  font-weight: bold;
+}
