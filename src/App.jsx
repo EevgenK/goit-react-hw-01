@@ -1,11 +1,10 @@
-import { useState } from "react";
-import userData from "./data/userData.json";
+import { userData, friends, transactions } from "./data";
 import css from "./app.module.css";
 import Profile from "./components/profile/Profile";
+import FriendList from "./components/frendlist/FriendList";
+import TransactionHistory from "./components/transaction_history/TransactionHistory";
 
 function App() {
-  const [count, setCount] = useState(0);
-
   return (
     <div className={css.container}>
       <Profile
@@ -15,6 +14,8 @@ function App() {
         image={userData.avatar}
         stats={userData.stats}
       />
+      <FriendList friends={friends} />
+      <TransactionHistory items={transactions} />
     </div>
   );
 }

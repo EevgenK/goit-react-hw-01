@@ -1,4 +1,5 @@
-import css from "./profile.module.css";
+import PropTypes from "prop-types";
+import css from "./Profile.module.css";
 
 export default function Profile({ name, tag, location, image, stats }) {
   let items = [];
@@ -22,3 +23,10 @@ export default function Profile({ name, tag, location, image, stats }) {
     </div>
   );
 }
+Profile.propTypes = {
+  name: PropTypes.string.isRequired,
+  tag: PropTypes.string.isRequired,
+  location: PropTypes.string.isRequired,
+  image: PropTypes.string.isRequired,
+  stats: PropTypes.objectOf(PropTypes.number).isRequired,
+};
