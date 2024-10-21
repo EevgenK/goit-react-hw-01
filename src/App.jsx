@@ -1,8 +1,8 @@
 import { userData, friends, transactions } from "./data";
 import css from "./app.module.css";
-import Profile from "./components/profile/Profile";
-import FriendList from "./components/frendlist/FriendList";
-import TransactionHistory from "./components/transaction_history/TransactionHistory";
+import Profile from "./components/Profile/Profile";
+import FriendList from "./components/FrendList/FriendList";
+import TransactionHistory from "./components/TransactionHistory/TransactionHistory";
 
 function App() {
   return (
