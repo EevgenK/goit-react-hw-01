@@ -1,5 +1,5 @@
 import PropTypes from "prop-types";
-import css from "./Profile.module.css";
+import css from "./profile.module.css";
 
 export default function Profile({ name, tag, location, image, stats }) {
   let items = [];
